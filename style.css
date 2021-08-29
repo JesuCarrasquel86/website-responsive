@@ -76,20 +76,33 @@ header .navegacion li a:hover
 {
    color: rgb(255, 255, 255);
 }
-.hover-line::after
+.hover-line{
+   position: relative;
+}
+.hover-line::after, .hover-line::before
 {
 content: '';
 display: block;
+position: absolute;
 top: 100%;
 width: 0%;
 height: 3px;
 background-color: rgb(255, 255, 255);
-transition: width .3s;
+transition: width .6s;
+}
+.hover-line::before
+{
+right: 0;
 }
 .hover-line:hover::after
 {
    width: 100%;
-   transition: width .3s;
+   transition: width .6s;
+}
+.hover-line:hover::before
+{
+   width: 100%;
+   transition: width .6s;
 }
 .content
 {
