@@ -123,8 +123,8 @@ transition: width .3s;
 {
    position: absolute;
    bottom: 0;
-   height: 90%;
-   right: 100px;
+   height: 85%;
+   right: 50px;
 }
 @media (max-width: 900px)
 {
